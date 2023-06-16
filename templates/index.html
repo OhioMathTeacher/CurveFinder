@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with ChatGPT and GeoGebra</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="iframe-container">
+            <iframe src="https://www.geogebra.org/classic/texdwdkd?embed" 
+            allowfullscreen style="border: none;" width="100%" height="100%"></iframe>
+        </div>
+        <div class="chatbox-container">
+            <div id="chatlog"></div>
+            <div id="chat-inputs">
+                <input type="text" id="userInput" placeholder="Type your message..." />
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
